@@ -1,0 +1,14 @@
+#+title: Shitfuck 2: Electric Boogaloo!
+
+* App
+** Features [0/1]
+- [ ] Jackpot filling up in background
+*** Events [0/2]
+- [ ] Hide the jackpot value and limit?
+- [ ] Choice to challenge double or nothing, with penalty if failed
+*** Animations [0/4]
+- [ ] New moves in
+- [ ] Amount moves up to jackpot when next card
+- [ ] Victory screen is just a smaller card which grows and becomes opaque on
+  top of the current card
+- [ ] Pause screen is the same

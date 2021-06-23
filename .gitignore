@@ -1,0 +1,6 @@
+*\~
+build
+.idea
+.dart_tool
+*.log
+*.lock

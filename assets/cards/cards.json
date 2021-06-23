@@ -1,0 +1,81 @@
+{
+    "drinkCard": {
+	"iconU": 983480,
+	"event": "Drink",
+	"shortDesc": "Drink this many sips",
+	"probability": 0.4,
+	"amountMin": 1,
+	"amountMax": 3
+    },
+    "specialCards": [
+	{
+	    "iconU": 983271,
+	    "event": "Skip",
+	    "shortDesc": "Drink the sips, skip the next player",
+	    "weight": 10,
+	    "amountMin": 1,
+	    "amountMax": 4
+	},
+	{
+	    "iconU": 63635,
+	    "event": "Reverse",
+	    "shortDesc": "Drink the sips, then reverse the turn order",
+	    "weight": 10,
+	    "amountMin": 1,
+	    "amountMax": 4
+	},
+	{
+	    "iconU": 63432,
+	    "event": "Left Out",
+	    "shortDesc": "Everyone else drinks",
+	    "weight": 1,
+	    "amountMin": 2,
+	    "amountMax": 5,
+	    "shiny": true
+	},
+	{
+	    "iconU": 63432,
+	    "event": "Group Activity",
+	    "shortDesc": "Everyone drinks",
+	    "weight": 3,
+	    "amountMin": 2,
+	    "amountMax": 5,
+	    "shiny": true
+	},
+	{
+	    "iconU": 63036,
+	    "event": "Leech",
+	    "shortDesc": "Drink this many sips from Jackpot",
+	    "weight": 5,
+	    "amountMin": 1,
+	    "amountMax": 3,
+	    "action": "leech"
+	},
+	{
+	    "iconU": 983132,
+	    "event": "Drinking Buddy",
+	    "shortDesc": "Choose someone who drinks with you",
+	    "weight": 7,
+	    "amountMin": 2,
+	    "amountMax": 4
+	},
+	{
+	    "iconU": 63702,
+	    "event": "Saboteur",
+	    "shortDesc": "Force someone to drink the sips",
+	    "weight": 4,
+	    "amountMin": 2,
+	    "amountMax": 4
+	},
+	{
+	    "iconU": 983636,
+	    "event": "Jacked",
+	    "shortDesc": "Drink, beware the new Jackpot limit",
+	    "weight": 8,
+	    "amountMin": 2,
+	    "amountMax": 4,
+	    "preAction": "jacked",
+	    "predicate": "jacked"
+	}
+    ]
+}
