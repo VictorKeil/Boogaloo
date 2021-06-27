@@ -3,7 +3,7 @@
 	"iconU": 983480,
 	"event": "Drink",
 	"shortDesc": "Drink this many sips",
-	"probability": 0.4,
+	"probability": 0.3,
 	"amountMin": 1,
 	"amountMax": 3
     },
@@ -12,7 +12,7 @@
 	    "iconU": 983271,
 	    "event": "Skip",
 	    "shortDesc": "Drink the sips, skip the next player",
-	    "weight": 10,
+	    "weight": 8,
 	    "amountMin": 1,
 	    "amountMax": 4
 	},
@@ -20,7 +20,7 @@
 	    "iconU": 63635,
 	    "event": "Reverse",
 	    "shortDesc": "Drink the sips, then reverse the turn order",
-	    "weight": 10,
+	    "weight": 8,
 	    "amountMin": 1,
 	    "amountMax": 4
 	},
@@ -28,7 +28,7 @@
 	    "iconU": 63432,
 	    "event": "Left Out",
 	    "shortDesc": "Everyone else drinks",
-	    "weight": 1,
+	    "weight": 3,
 	    "amountMin": 2,
 	    "amountMax": 5,
 	    "shiny": true
@@ -55,7 +55,7 @@
 	    "iconU": 983132,
 	    "event": "Drinking Buddy",
 	    "shortDesc": "Choose someone who drinks with you",
-	    "weight": 7,
+	    "weight": 6,
 	    "amountMin": 2,
 	    "amountMax": 4
 	},
@@ -71,7 +71,7 @@
 	    "iconU": 983636,
 	    "event": "Jacked",
 	    "shortDesc": "Drink, beware the new Jackpot limit",
-	    "weight": 8,
+	    "weight": 5,
 	    "amountMin": 2,
 	    "amountMax": 4,
 	    "preAction": "jacked",

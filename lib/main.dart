@@ -176,7 +176,6 @@ class BoogalooState extends State<Boogaloo>
     // and is a desired mechanic, however, it makes for a 'cleaner' victory screen
     // if the old limit is displayed, should the clutch fail.
     final oldJackpotLimit = gameModel.jackpotLimit;
-    final oldCard = _oldCard;
 
     Card? card;
     if (base != null) {
@@ -358,11 +357,10 @@ class CardDeck {
     }
 
     final weightSum = cards.last.fst;
-    print("weightSum: $weightSum");
     final double weightSel = sel * weightSum;
 
     final choice = cards
-        .firstWhere((c) => weightSel < c.fst, orElse: () => cards.last)
+        .firstWhere((c) => weightSel < c.fst, orElse: () => throw "Invalid card selector: $weightSel")
         .snd;
 
     return choice;
@@ -387,7 +385,6 @@ Future<CardDeck> loadCards(String fileName) async {
 
   // Weight of drinkCard
   weightSum = drinkCardP / (1 - drinkCardP) * weightSum;
-  print("weight of drinkCard: $weightSum");
 
   var deck = CardDeck();
   deck.add(weightSum, drinkCard);
@@ -398,6 +395,8 @@ Future<CardDeck> loadCards(String fileName) async {
     final cardBase = CardBase.fromJson(cardBaseJson);
     deck.add(weightSum, cardBase);
   }
+
+  print("weightSum: $weightSum");
 
   return deck;
 }
